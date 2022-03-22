@@ -1,0 +1,114 @@
+hr {
+    border: 0;
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    width: 100%;
+    margin: 0;
+}
+
+.produtos {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.card {
+    margin-top: 60px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+    margin: 20px;
+}
+
+.linha {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.botao {
+    width: 90%;
+    padding: 0.8em 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3c74f4;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 20px;
+}
+
+.botao:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.botao:active {
+    transform: translateY(-1px);
+}
+
+.frete-gratis {
+    background-color: #c6fea6;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.frete-gratis h2 {
+    margin-top: 20px;
+    color: #287c04;
+}
+
+/* LOADING */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid rgb(65, 228, 0);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(65, 228, 0) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,16 @@
+<div class="item">
+    <div class="imagem">
+        <img [src]="imageUrl" [alt]="descricao" [title]="descricao">
+    </div>
+    <div class="descricao">
+        <h3>{{ descricao }}</h3>
+        <small style="color: rgba(0, 0, 0, 0.5);">R$ {{ precoAntigo.toLocaleString('pt-BR', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          }) }}</small>
+        <p><b>R$ {{ preco.toLocaleString('pt-BR', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          }) }}</b></p>
+    </div>
+</div>
